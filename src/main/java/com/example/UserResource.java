@@ -1,5 +1,8 @@
 package com.example;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -13,6 +16,8 @@ import java.util.List;
 public class UserResource {
 
     private static List<User> users = new ArrayList<>();
+
+    Logger logger = LoggerFactory.getLogger(UserResource.class);
 
     static{
         User user = new User() ;
@@ -35,6 +40,8 @@ public class UserResource {
     @Path("/getUsers")
     @Produces(MediaType.APPLICATION_JSON)
     public List<User> getUsers() {
+
+        logger.info("Fetching a record for the Users");
         return users;
     }
 
