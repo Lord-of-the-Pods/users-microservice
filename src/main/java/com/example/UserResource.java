@@ -21,15 +21,15 @@ public class UserResource {
 
     static{
         User user = new User() ;
-        user.setFirstName("abhishek");
-        user.setLastName("vishnoi");
-        user.setEmail("abhishek.vishnoi@hotmail.com");
+        user.setFirstName("John");
+        user.setLastName("Doe");
+        user.setEmail("john.doe@hotmail.com");
         user.setPassword("password1");
 
         User user1 = new User() ;
-        user1.setFirstName("arushi");
-        user1.setLastName("vishnoi");
-        user1.setEmail("arushi.goyal@hotmail.com");
+        user1.setFirstName("Jane");
+        user1.setLastName("Doe");
+        user1.setEmail("jane.doe@hotmail.com");
         user1.setPassword("password1");
 
         users.add(user);
